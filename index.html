@@ -104,7 +104,7 @@
                                         <p class="card-text">La camiseta ideal para hipster.</p>
                                         <form class="form-inline">
                                             <a href="#" class="btn btn-primary d-inLine btn-sm mr-2">$229 <i class="fa fa-shopping-cart"></i></a>
-                                            <button type="button" class="btn btn-outline-secondary btn-sm">Detalles</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#Modal1">Detalles</button>
                                         </form>
                                     </div>
                                 </div>
@@ -166,11 +166,85 @@
                     </div>
                    
                     <!-- CARDS END -->
-
                 </div>              
             </div>
         </div>
        
+        <!-- MODAL -->
+        <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Hipster Ultimate</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <!-- alert -->
+                    <div class="container">
+                        <div class="alert alert-primary" role="alert">
+                            <i class="fa fa-info-circle"></i> Este producto está agotado
+                        </div>
+                    </div>
+                    <!-- alert end -->
+                    <!-- info -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/camiseta-1.jpg" alt="HipsterUltimate" class="img-thumbnail">  
+                            </div>
+                            <div class="col-6">
+                                <p>Precio: <strong>299</strong></p>
+                                <p>Calificación: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></p>
+                                <p><span class="badge badge-warning">Hipster</span> <span class="badge badge-secondary">Deportiva</span></p>
+                                <a href="#"><i class="fa fa-heart"></i> Agregar a los deseos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- info end -->
+                    <!-- nav -->
+                    <div class="m-4 mb-0">
+                        <div class="container">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Descripción</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Comentarios</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-2" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    La camiseta ideal para hipster. 100% algodon. Diseñada en los colores verde, cafe, gris y negro.
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <ul class="list-group">
+                                        <li class="list-group-item bg-light text-body">Germán Escobar comentó hace dos dias</li>
+                                        <li class="list-group-item">Esta camiseta está increible, la quiero!</li>
+                                    </ul>
+                                </div>
+                                <form class="mt-4">
+                                    <div class="form-group">
+                                        
+                                        <textarea class="form-control" id="Textarea" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- nav end -->
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">comprar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
         
 
         <script src="https://kit.fontawesome.com/757051644e.js" crossorigin="anonymous"></script>
