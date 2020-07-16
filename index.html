@@ -9,17 +9,23 @@
     <body>
 
         <!-- NAVBAR  -->
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand">E-Commerce</a>
-                <form class="form-inline my-2 my-lg-0">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mr-4">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsingNavbar">
+                
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
                             <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> Canasta</a>
                         </li>
+                        <li class="nav-item">
+                          <a href="#"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">Salir</button></a>  
+                        </li>
                     </ul>
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Salir</button> 
-                </form>
+                </div>
             </div>
         </nav>
 
@@ -28,16 +34,17 @@
                     <!-- SERCH -->
         <div class="container mt-5">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" id="serch" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary " for="serch" type="submit"><i class="fas fa-search"></i></button> 
+                            <button class="btn btn-outline-secondary bg-light text-body" for="#serch" type="submit"><i class="fas fa-search"></i></button> 
                         </div>
                     </div>
                     <!-- SERCH END -->
                     
                     <!-- CATEGORIES -->
+                    <div class="d-none d-lg-block">
                     <div class="mt-4">
                         <h5>Categorias</h5>
                     </div>
@@ -54,11 +61,12 @@
                         <a href="#" class="pt-2 pb-2 list-group-item list-group-item-action ">Apretada <span class="badge badge-pill badge-secondary float-right">19</span></a>
                         
                     </div>
+                    </div>
                 </div>
 
                     <!-- CATEGORIES END -->
                     
-                <div class="col-9 ">
+                <div class="col-12 col-lg-9 ">
 
                     <!-- CAROUSEl -->
                     <div class="container m-0 p-0">
@@ -96,7 +104,7 @@
                     <!-- CARDS -->
                     <div class="container mt-5 p-0">
                         <div class="row">
-                            <div class="col-4 mb-4">
+                            <div class="col-6 col-md-4 mb-4">
                                 <div class="card">
                                     <img src="images/camiseta-1.jpg" class="card-img-top" alt="HipsterUltimate">
                                     <div class="card-body">
@@ -109,7 +117,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 mb-4">
+                            <div class="col-6 col-md-4 mb-4">
                                 <div class="card" >
                                     <img src="images/camiseta-2.jpg" class="card-img-top" alt="OnMotionLive">
                                     <div class="card-body">
@@ -122,7 +130,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 mb-4 ">
+                            <div class="col-6 col-md-4 mb-4">
                                 <div class="card">
                                     <img src="images/camiseta-3.jpg" class="card-img-top" alt="UndergroundMax">
                                     <div class="card-body">
@@ -135,7 +143,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 mb-4">
+                            <div class="col-6 col-md-4 mb-4">
                                 <div class="card">
                                     <img src="images/camiseta-4.jpg" class="card-img-top" alt="RockBand">
                                     <div class="card-body">
@@ -148,7 +156,7 @@
                                     </div>
                                 </div>
                             </div>    
-                            <div class="col-4 mb-4">
+                            <div class="col-6 col-md-4 mb-4">
                                 <div class="card">
                                     <img src="images/camiseta-5.jpg" class="card-img-top" alt="FlyFootball">
                                     <div class="card-body">
@@ -216,7 +224,7 @@
                             </ul>
                             <div class="tab-content mt-2" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    La camiseta ideal para hipster. 100% algodon. Diseñada en los colores verde, cafe, gris y negro.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugit, similique sequi quaerat qui ea non laborum, nemo mollitia ad doloribus voluptatem esse? Maiores incidunt odio modi, libero id alias.
                                 </div>
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     <ul class="list-group">
@@ -226,7 +234,6 @@
                                 </div>
                                 <form class="mt-4">
                                     <div class="form-group">
-                                        
                                         <textarea class="form-control" id="Textarea" rows="3" placeholder="Ingresa tu comentario"></textarea>
                                     </div>
                                 </form>
